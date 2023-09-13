@@ -1,0 +1,11 @@
+extends layout 
+
+block content 
+    h1 #{bike_info.name} 
+
+    ul 
+        li #{bike_info.description}
+        li #{bike_info.category.name}
+        li #{bike_info.price}
+        li #{bike_info.quantity}
+        

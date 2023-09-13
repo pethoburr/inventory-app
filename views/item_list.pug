@@ -1,0 +1,13 @@
+extends layout 
+
+block content 
+    h1= title
+    
+    ul 
+        each bike in bike_list 
+            li 
+                a(href=bike.url) #{bike.name} #{bike.category.name} #{bike.price} #{bike.description} #{bike.quantity}
+
+        else 
+            li There are no bikes.
+

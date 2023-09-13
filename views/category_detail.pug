@@ -1,0 +1,19 @@
+extends layout 
+
+block content 
+
+    h1= make_bike.name 
+
+    h3= make_bike.description
+
+    ul 
+        each bike in make 
+            li= bike.name 
+        else 
+            li There are no bikes
+
+    
+
+            
+            
+            
