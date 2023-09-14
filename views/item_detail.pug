@@ -8,4 +8,8 @@ block content
         li #{bike_info.category.name}
         li #{bike_info.price}
         li #{bike_info.quantity}
-        
+    
+    p 
+        a(href=bike_info.url+'/delete') Delete bike
+    p 
+        a(href=bike_info.url+'/update') Update Bike

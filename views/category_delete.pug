@@ -1,0 +1,25 @@
+extends layout 
+
+block content 
+    h1 #{title}: #{makers.name}
+    p= makers.description 
+
+    if bikes.length
+
+        p #[strong Delete the following bikes before attempting to delete this category]
+
+        div 
+            h4 Bikes 
+
+            dl 
+            each bike in bikes 
+                dt 
+                    a(href=bike.url) #{bike.name}
+                dd #{bike.description} 
+
+    else 
+        p Do you really want to delete this category?
+
+        form(method='POST' action='')
+            input(type='hidden', name='categoryid', required='true', value=makers._id)
+            button(type='submit') Delete

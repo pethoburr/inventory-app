@@ -1,0 +1,18 @@
+extends layout 
+
+block content 
+
+    h1= title 
+
+    form(method='POST' action='')
+        div 
+            label(for='name') Name: 
+            input(type='text' name='name' value=(undefined===makers ? '' : makers.name) )
+            label(for='description') Description: 
+            input(type='text' name='description' value=(undefined===makers ? '' : makers.description))
+        button(type='submit') Add
+    
+    if errors
+        ul
+            for error in errors
+                li!= error.msg

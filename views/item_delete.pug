@@ -1,0 +1,14 @@
+extends layout 
+
+block content 
+    h1 #{title}:  #{bike.name} 
+    p= bike.description 
+    p= bike.category.name
+    p= bike.price 
+    p= bike.quantity
+
+    p Do you really want to delete this bike?
+
+    form(method='POST' action='')
+        input(type='hidden', name='bikeid', required='true', value=bike._id)
+        button(type='submit') Delete

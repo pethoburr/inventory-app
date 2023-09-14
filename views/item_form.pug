@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 #{title}
+
+  form(method='POST' action='')
+    div
+      label(for='name') Name:
+      input(type='text', placeholder='Enter bike year followed by make and model (e.g. 2022 Honda CBR600RR)' name='name' value=(undefined===bike ? '' : bike.name))
+      label(for='category') Category 
+      select(name='category')
+        each make in maker
+          option(value=make._id, selected=(undefined===bike ? '' : bike.category._id && bike.category._id.toString() === make._id.toString())) #{make.name}
+      label(for='description') Details 
+      input(type='text', placeholder='Enter bike description' name = 'description' value=(undefined===bike ? '' : bike.description))
+      label(for='price') Price 
+      input(type='text', placeholder='Enter bike price' name = 'price' value=(undefined===bike ? '' : bike.price))
+      label(for='quantity') Quantity
+      input(type='text', placeholder='Enter bike quantity' name = 'quantity' value=(undefined===bike ? '' : bike.quantity))
+    button(type='submit') Submit
+
+  if errors
+   ul
+    for error in errors
+     li!= error.msg
