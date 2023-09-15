@@ -2,11 +2,11 @@ extends layout
 
 block content 
     nav 
-        a(href='/catalog') Home 
-        a(href='/catalog/items') All bikes
-        a(href='/catalog/categorys') All makes 
-        a(href='/catalog/items/create') Add bike 
-        a(href='/catalog/category/create') Add make
+        a(href='/catalog', class='navLinks') Home 
+        a(href='/catalog/items', class='navLinks') All bikes
+        a(href='/catalog/categorys', class='navLinks') All makes 
+        a(href='/catalog/items/create', class='navLinks') Add bike 
+        a(href='/catalog/category/create', class='navLinks') Add make
     h1= make_bike.name 
 
     h3= make_bike.description
@@ -16,7 +16,7 @@ block content
             a(href=bike.url, class='detail') #{bike.name} 
         else 
             li(class='dlt') There are no bikes
-    div(class='editContainer')
+    div(class='detailBtns')
         p 
             a(href=make_bike.url+'/delete') Delete category
         p 

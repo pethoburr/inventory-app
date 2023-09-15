@@ -217,3 +217,9 @@ button:hover {
   margin-left: 39rem;
   margin-bottom: 3rem
 }
+
+.detailBtns {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
