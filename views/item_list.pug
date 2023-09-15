@@ -1,6 +1,11 @@
 extends layout 
 
-block content 
+block content
+    nav 
+        a(href='/catalog', class='navLinks') Home
+        a(href='/catalog/categorys', class='navLinks') All makes 
+        a(href='/catalog/item/create', class='navLinks') Add bike 
+        a(href='/catalog/category/create', class='navLinks') Add make
     h1= title
     
     ul 

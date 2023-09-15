@@ -1,10 +1,14 @@
 extends layout
 
 block content
+  nav 
+    a(href='/catalog', class='navLinks') Home 
+    a(href='/catalog/items', class='navLinks') All bikes 
+    a(href='/catalog/categorys', class='navLinks') All makes 
+    a(href='/catalog/category/create', class='navLinks') Add make
   h1 #{title}
-
-  form(method='POST' action='')
-    div
+  div(class='formContainer')
+    form(method='POST' action='')
       label(for='name') Name:
       input(type='text', placeholder='Enter bike year followed by make and model (e.g. 2022 Honda CBR600RR)' name='name' value=(undefined===bike ? '' : bike.name))
       label(for='category') Category 
@@ -17,7 +21,7 @@ block content
       input(type='text', placeholder='Enter bike price' name = 'price' value=(undefined===bike ? '' : bike.price))
       label(for='quantity') Quantity
       input(type='text', placeholder='Enter bike quantity' name = 'quantity' value=(undefined===bike ? '' : bike.quantity))
-    button(type='submit') Submit
+      button(type='submit') Submit
 
   if errors
    ul

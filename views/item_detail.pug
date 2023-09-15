@@ -1,15 +1,21 @@
 extends layout 
 
-block content 
+block content
+    nav 
+        a(href='/catalog', class='navLinks') Home
+        a(href='/catalog/items', class='navLinks') All bikes
+        a(href='/catalog/categorys', class='navLinks') All makes
+        a(href='/catalog/item/create', class='navLinks') Add bike 
+        a(href='/catalog/category/create', class='navLinks') Add make
     h1 #{bike_info.name} 
 
-    ul 
-        li #{bike_info.description}
-        li #{bike_info.category.name}
-        li #{bike_info.price}
-        li #{bike_info.quantity}
-    
-    p 
-        a(href=bike_info.url+'/delete') Delete bike
-    p 
-        a(href=bike_info.url+'/update') Update Bike
+    ul(class='item_detail')
+        li Description: #{bike_info.description}
+        li Make: #{bike_info.category.name}
+        li Price: $#{bike_info.price}
+        li Quantity: #{bike_info.quantity}
+    div(class='editContainer')
+        p 
+            a(href=bike_info.url+'/delete') Delete bike
+        p 
+            a(href=bike_info.url+'/update') Update Bike

@@ -1,16 +1,19 @@
 extends layout 
 
 block content 
-
+    nav 
+        a(href='/catalog') Home 
+        a(href='/catalog/items') All bikes 
+        a(href='/catalog/categorys') All makes 
+        a(href='/catalog/item/create') Add bike
     h1= title 
-
-    form(method='POST' action='')
-        div 
+    div(class='formContainer')
+        form(method='POST' action='')
             label(for='name') Name: 
             input(type='text' name='name' value=(undefined===makers ? '' : makers.name) )
             label(for='description') Description: 
             input(type='text' name='description' value=(undefined===makers ? '' : makers.description))
-        button(type='submit') Add
+            button(type='submit') Add
     
     if errors
         ul

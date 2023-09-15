@@ -1,12 +1,17 @@
 extends layout 
 
-block content 
+block content
+    nav 
+        a(href='/catalog', class='navLinks') Home 
+        a(href='/catalog/items', class='navLinks') All bikes 
+        a(href='/catalog/item/create', class='navLinks') Add bike 
+        a(href='/catalog/category/create', class='navLinks') Add make
     h1= title
     
-    ul 
+    ul(class='detailContainer')
         each make in make_list 
             li 
-                a(href=make.url) #{make.name} #{make.description} 
+                a(href=make.url, class='detail') #{make.name} 
 
         else 
             li There are no makes.

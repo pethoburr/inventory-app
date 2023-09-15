@@ -1,14 +1,14 @@
 extends layout 
 
 block content 
-    h1 #{title}:  #{bike.name} 
-    p= bike.description 
-    p= bike.category.name
-    p= bike.price 
-    p= bike.quantity
+    h1(class='deleteTitle') #{title}:  #{bike.name} 
+    p(class='dlt')= bike.description 
+    p(class='dlt')= bike.category.name
+    p(class='dlt')= bike.price 
+    p(class='dlt')= bike.quantity
 
-    p Do you really want to delete this bike?
+    p(class='dlt') Do you really want to delete this bike?
 
-    form(method='POST' action='')
+    form(method='POST' action='' class='formDelete')
         input(type='hidden', name='bikeid', required='true', value=bike._id)
         button(type='submit') Delete

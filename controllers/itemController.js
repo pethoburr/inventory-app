@@ -4,7 +4,7 @@ const asyncHandler = require("express-async-handler");
 const { body, validationResult } = require("express-validator");
 
 exports.item_index = asyncHandler(async (req, res, next) => {
-    res.render('index', { title: 'Super Sport Inventory'});
+    res.render('index', );
 });
 
 exports.item_list = asyncHandler(async (req, res, next) => {
@@ -96,7 +96,7 @@ exports.item_update_get = asyncHandler(async (req, res, next) => {
     }
 
     res.render("item_form", {
-        title: "Add bike",
+        title: "Update bike",
         bike: bikey,
         maker: make
     })

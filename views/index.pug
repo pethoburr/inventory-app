@@ -1,13 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title} application!
+  div(class='homeContainer') 
+    h1(class='first') Super 
+      h2(class='second') Sport 
+        h3(class='third') Shop
+    a(href='/catalog/items', class='shopNow') Shop Now!
   
-  a(href='/catalog/items') All bikes
-
-  a(href='/catalog/categorys') All makes
-
-  a(href='/catalog/item/create') Add bike 
-
-  a(href='/catalog/category/create') Add make
+    
