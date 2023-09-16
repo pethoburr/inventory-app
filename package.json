@@ -19,6 +19,7 @@
     "pug": "^3.0.2"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.9",
     "nodemon": "^3.0.1"
   }
 }

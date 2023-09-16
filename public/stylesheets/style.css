@@ -18,18 +18,18 @@ main {
 }
 
 a, p {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 h1 {
   margin-top: 5rem !important;
   margin: 0;
-  font-size: 10rem;
+  font-size: 5rem;
   color: darkorange;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   color: darkorange;
 }
 
@@ -72,7 +72,7 @@ nav {
 .item_detail {
   display: flex;
   justify-content: center;
-  font-size: 4rem;
+  font-size: 2rem;
   align-items: center;
   height: 20rem;
   color: white;
@@ -107,19 +107,19 @@ form {
 
 .first {
   text-align: left;
-  font-size: 14rem;
+  font-size: 7rem;
   padding-left: 8rem !important;
 }
 
 .second {
   padding-left: 10rem !important;
-  font-size: 12rem;
+  font-size: 6rem;
 }
 
 .third {
   text-align: left;
   padding-left: 13rem !important;
-  font-size: 10rem;
+  font-size: 5rem;
 }
 
 .first, .second, .third {
@@ -132,7 +132,7 @@ form {
   color: darkorange;
   border-radius: 1rem;
   padding: 1rem;
-  font-size: 6rem !important;
+  font-size: 3rem !important;
   margin: 12rem;
   margin-left: 17rem;
   text-decoration: none;
@@ -164,7 +164,7 @@ select {
 }
 
 input, input::placeholder {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 input:focus, select:focus {
@@ -183,7 +183,7 @@ input:invalid {
 }
 
 select, select::placeholder {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 input {
@@ -205,7 +205,7 @@ label {
 button {
   margin: 2rem;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   border: 2px solid orange;
   border-radius: 1rem;
   color: darkorange;
