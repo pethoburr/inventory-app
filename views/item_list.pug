@@ -8,10 +8,10 @@ block content
         a(href='/catalog/category/create', class='navLinks') Add make
     h1= title
     
-    ul 
+    ul(class='detailContainer')
         each bike in bike_list 
             li 
-                a(href=bike.url) #{bike.name} #{bike.category.name} #{bike.price} #{bike.description} #{bike.quantity}
+                a(href=bike.url, class='detail') #{bike.name}
 
         else 
             li There are no bikes.

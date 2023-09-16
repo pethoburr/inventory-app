@@ -1,3 +1,7 @@
+* {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -14,16 +18,18 @@ main {
 }
 
 a, p {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 h1 {
+  margin-top: 5rem !important;
   margin: 0;
-  font-size: 5rem;
+  font-size: 10rem;
   color: darkorange;
 }
 
 h3 {
+  font-size: 3rem;
   color: darkorange;
 }
 
@@ -66,16 +72,17 @@ nav {
 .item_detail {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 4rem;
   align-items: center;
   height: 20rem;
   color: white;
 }
 
 form {
+  border-radius: 2rem;
   display: flex;
   background-color: orange;
-  width: 30%;
+  width: 25%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -100,19 +107,19 @@ form {
 
 .first {
   text-align: left;
-  font-size: 7rem;
+  font-size: 14rem;
   padding-left: 8rem !important;
 }
 
 .second {
   padding-left: 10rem !important;
-  font-size: 6rem;
+  font-size: 12rem;
 }
 
 .third {
   text-align: left;
   padding-left: 13rem !important;
-  font-size: 5rem;
+  font-size: 10rem;
 }
 
 .first, .second, .third {
@@ -125,8 +132,9 @@ form {
   color: darkorange;
   border-radius: 1rem;
   padding: 1rem;
-  font-size: 3rem !important;
-  margin: 8rem;
+  font-size: 6rem !important;
+  margin: 12rem;
+  margin-left: 17rem;
   text-decoration: none;
   border: 2px solid darkorange;
   width: 14rem;
@@ -148,10 +156,34 @@ form {
 }
 
 select {
-  width: 87%;
+  width: 85%;
   padding: 1rem;
+  height: 7rem;
   margin: 1rem;
   border: 2px solid orange;
+}
+
+input, input::placeholder {
+  font-size: 3rem;
+}
+
+input:focus, select:focus {
+  border: 2px solid darkorange;
+  background-color: darkorange;
+  color: white;
+  outline: none;
+}
+
+input:valid {
+  border: 3px solid green;
+}
+
+input:invalid {
+  border: 3px solid red;
+}
+
+select, select::placeholder {
+  font-size: 3rem;
 }
 
 input {
@@ -159,19 +191,21 @@ input {
   width: 80%;
   border: 2px solid orange;
   margin: 1rem;
+  height: 5rem
 }
 
 label {
   margin: 2rem;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 4rem;
   color: white;
+  align-self: flex-start;
 }
 
 button {
   margin: 2rem;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 3rem;
   border: 2px solid orange;
   border-radius: 1rem;
   color: darkorange;
@@ -195,11 +229,13 @@ button:hover {
 }
 
 .editContainer {
-  position: fixed;
-  bottom: 0;
-  margin-left: 37rem;
-  margin-bottom: 8rem;
   display: flex;
+  flex-direction: row-reverse;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .deleteTitle {
