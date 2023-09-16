@@ -10,9 +10,9 @@ block content
     div(class='formContainer')
         form(method='POST' action='')
             label(for='name') Name: 
-            input(type='text' name='name' value=(undefined===makers ? '' : makers.name) )
+            input(type='text' required name='name' value=(undefined===makers ? '' : makers.name) )
             label(for='description') Description: 
-            input(type='text' name='description' value=(undefined===makers ? '' : makers.description))
+            input(type='text' required name='description' value=(undefined===makers ? '' : makers.description))
             button(type='submit') Add
     
     if errors

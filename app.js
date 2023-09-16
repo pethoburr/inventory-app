@@ -21,6 +21,7 @@ async function main() {
   await mongoose.connect(mongoDB);
 }
 
+// /home/maninder/.fly/bin/flyctl
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
