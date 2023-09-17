@@ -3,6 +3,7 @@
 }
 
 body {
+  background-position-x: center;
   overflow-x: hidden;
   margin: 0;
   width: 100vw;
@@ -23,7 +24,7 @@ a, p {
 }
 
 h1 {
-  margin-top: 5rem !important;
+  margin-top: 2rem !important;
   margin: 0;
   font-size: 5rem;
   color: darkorange;
@@ -61,6 +62,8 @@ a:hover {
 }
 
 nav {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: space-around;
   
@@ -138,7 +141,7 @@ form {
   margin-left: 17rem;
   text-decoration: none;
   border: 2px solid darkorange;
-  width: 14rem;
+  width: max-content;
 }
 
 .shopNow:hover {
@@ -147,7 +150,7 @@ form {
 }
 
 .navLinks {
-  padding: 1rem;
+  padding: 0;
   text-decoration: none;
   color: white;
 }
@@ -157,7 +160,7 @@ form {
 }
 
 select {
-  width: 85%;
+  width: 82%;
   padding: .5rem;
   height: 3.5rem;
   margin: .5rem;
@@ -196,11 +199,12 @@ input {
 }
 
 label {
-  margin: 1rem;
+  width: 82%;
+  margin: .5rem;
   margin-bottom: 0;
   font-size: 1.5rem;
   color: white;
-  align-self: flex-start;
+  align-self: center;
 }
 
 button {
