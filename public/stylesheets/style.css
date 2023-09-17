@@ -26,7 +26,7 @@ a, p {
 h1 {
   margin-top: 2rem !important;
   margin: 0;
-  font-size: 5rem;
+  font-size: 3rem;
   color: darkorange;
 }
 
@@ -75,6 +75,7 @@ nav {
 }
 
 .item_detail {
+  padding: 0;
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -229,6 +230,7 @@ button:hover {
 }
 
 .detailContainer {
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -310,7 +312,67 @@ button:hover {
     padding: 1rem;
   }
 
+  .detailContainer {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5rem !important;
+  }
+
   .navLinks {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .editContainer {
+    position: inherit;
+  }
+
+  a {
+    padding: 1rem;
+  }
+
+  .first {
+    text-align: left;
+    font-size: 3rem;
+    padding-left: 3rem !important;
+  }
+  
+  .second {
+    padding-left: 5rem !important;
+    font-size: 2rem;
+  }
+  
+  .third {
+    margin-top: 0 !important;
+    text-align: left;
+    padding-left: 7rem !important;
     font-size: 1.5rem;
+  }
+
+  .shopNow {
+    position: fixed;
+    bottom: 0;
+    color: white;
+    background-color: darkorange;
+    margin: 1rem;
+    font-size: 2rem!important;
+    align-self: flex-end;
+  }
+
+  .homeContainer {
+    background-position-x: right;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .first, .second, .third {
+    margin-right: 1rem !important;
+  }
+
+  .item_detail {
+    margin-bottom: 0;
   }
 }
