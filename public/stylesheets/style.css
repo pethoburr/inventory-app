@@ -10,6 +10,8 @@ body {
   height: 100vh;
   background-image: url('../images/backlight.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 main {
@@ -334,20 +336,20 @@ button:hover {
 
   .first {
     text-align: left;
-    font-size: 3rem;
+    font-size: 5rem;
     padding-left: 3rem !important;
   }
   
   .second {
     padding-left: 5rem !important;
-    font-size: 2rem;
+    font-size: 4rem;
   }
   
   .third {
     margin-top: 0 !important;
     text-align: left;
     padding-left: 7rem !important;
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 
   .shopNow {
@@ -375,4 +377,5 @@ button:hover {
   .item_detail {
     margin-bottom: 0;
   }
+
 }
