@@ -31,7 +31,8 @@ h1 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  margin: .6rem;
+  font-size: 3.5rem;
   color: darkorange;
 }
 
@@ -264,4 +265,47 @@ button:hover {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    margin-top: 10rem !important;
+    font-size: 5.5rem;
+  }
+
+  input {
+    height: 4.5rem;
+  }
+
+  input, input::placeholder {
+    font-size: 3.5rem;
+  }
+
+  select {
+    height: 5.5rem;
+  }
+
+  select, select::placeholder {
+    font-size: 3.5rem;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  button {
+    font-size: 3.5rem;
+  }
+
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  .navLinks {
+    font-size: 3rem;
+  }
 }
